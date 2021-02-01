@@ -9,6 +9,5 @@ pyasn1==0.4.8
 pycodestyle==2.6.0
 requests==2.25.1
 rsa==4.7
-Telethon==1.19.1
 toml==0.10.2
 urllib3==1.26.3
