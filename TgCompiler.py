@@ -180,12 +180,6 @@ if __name__ == "__main__":
         "api_id": os.environ.get("api_id"),
         "api_hash": os.environ.get("api_hash"),
         "session_name": os.environ.get("session_name"),
-        "input_channel_names": set(
-            x for x in os.environ.get("input_channel_names", "").split()
-        ),
-        "output_channel_names": set(
-            x for x in os.environ.get("output_channel_names", "").split()
-        ),
     }
 
     start(config)
