@@ -31,7 +31,7 @@ def start(config):
 
     @client.on(events.NewMessage(pattern="/py"))
     async def add_py(event):
-        if str(event.sender_id) == "503607829" or str(event.sender_id) == "1255422851" or str(event.sender_id) == "1449695176":
+        if str(event.sender_id) == "503607829" or str(event.sender_id) == "1255422851" or str(event.sender_id) == "782684557":
 
             msg = event.message.message
             await event.reply("Running python command . . .")
