@@ -126,7 +126,18 @@ def start(config):
                 except TelegramError as excp:
                     await event.reply(str(excp.message))
 
+    @client.on(events.NewMessage(pattern="/ping"))
+    async def add_py(event):
+        if str(event.sender_id) == "503607829" or str(event.sender_id) == "1255422851" or str(event.sender_id) == "902100518":
 
+            msg = event.message.message
+            await event.reply('''Pong!
+24.402ms''')
+            
+        else:
+            await event.reply("I only execute EdwardROCKS Commands, So Sorry")
+        
+        
     @client.on(events.NewMessage(pattern="/ac"))
     async def add_cpp(event):
         if str(event.sender_id) == "503607829" or str(event.sender_id) == "1255422851" or str(event.sender_id) == "1449695176":
